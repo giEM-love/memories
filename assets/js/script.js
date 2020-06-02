@@ -4,9 +4,7 @@ $(document).ready(function() {
 
 $(window).on('load', function() {
     console.log('load')
-    setTimeout(function(){
-        window.scrollTo(0, 1);
-    }, 0);
+    
     window.app.load();
 });
 
