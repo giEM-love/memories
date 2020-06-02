@@ -52,20 +52,35 @@ $browser-context: 18; // Default
             transition: transform .3s;
             box-shadow: 0px 0px 152px -9px rgba(0,0,0,0.51);
             font-size: em(18);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(140, 124, 123, 0.09);
             @media only screen and (max-width : 767px){
-                font-size: 10px;
+                font-size: 14px;
             }
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
             &:hover, &:active {
-                transform: scale(1.1);
+                transform: scale(1.04);
+                outline: none;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                @media only screen and (max-width: 767px){
+                    transform: scale(1.08);
+                }
             }
             span {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
                 height: em(50);
                 width: em(50);
                 background: #cb4e4b;   
+                
+            }
+            &:focus {
+                outline: none;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
             }
         }
     }
@@ -73,7 +88,17 @@ $browser-context: 18; // Default
         margin-top: em(30);
         font-size: em(18);
         @media only screen and (max-width : 767px){
-            font-size: 10px;
+            font-size: 16px;
+            margin-top: 150px;
+        }
+        opacity: .5;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        &:focus {
+            outline: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
         }
         audio {
             width: em(300);
