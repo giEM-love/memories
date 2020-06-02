@@ -5,6 +5,7 @@
   
 	Animation.prototype.init = function() {
         Animation.prototype.inView();
+        Animation.prototype.playButtonClick();
 	};
 
     Animation.prototype.inView = function() {
@@ -17,6 +18,23 @@
                 }
             }
         });
+    }
+
+    Animation.prototype.playButtonClick = function(){
+
+        $(".btn-play").on("click", function(){
+            var item = Math.floor((Math.random() * 22) + 0);
+
+
+            $(this).parent().siblings().find("source").attr("src", "https://www.mboxdrive.com/love-"+item+".mp3")
+            setTimeout(function(){
+                $("#audio")[0].load();
+                $("#audio")[0].play();
+            },300)
+
+
+            
+        })
     }
 
     app.Animation = Animation;
