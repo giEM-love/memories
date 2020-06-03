@@ -411,11 +411,6 @@ body {
   }
 }
 
-.animated .animated-child {
-  opacity: 0;
-  transform: translateY(15px);
-}
-
 .main-container {
   height: 100vh;
   width: 100%;
@@ -490,6 +485,10 @@ body {
 .main-container .audio-wrapper audio {
   width: 16.6666666667em;
   outline: none;
+}
+.main-container.animated .animated-child {
+  opacity: 0;
+  transform: translateY(-25px);
 }
 
 /**
