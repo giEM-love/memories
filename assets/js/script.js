@@ -16,11 +16,12 @@ $(window).on('load', function() {
     //     },150)
         
     // }
+    window.scrollTo(0, 1);
     window.app.load();
 });
 
 // scroll to top when page loads
 window.onbeforeunload = function () {
     $('body').hide();
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 1);
 };
