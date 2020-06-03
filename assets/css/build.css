@@ -400,6 +400,10 @@ h3 {
   box-sizing: border-box;
 }
 
+html {
+  background-color: #e75955;
+}
+
 body {
   font-size: 1.406vw;
   background-color: #e75955;

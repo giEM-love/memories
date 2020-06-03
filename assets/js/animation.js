@@ -59,11 +59,11 @@
                 
                 window.location.reload()
             }
-
-
-
-            
         })
+
+        
+
+        
     }
 
     app.Animation = Animation;

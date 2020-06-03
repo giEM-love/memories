@@ -4,7 +4,18 @@ $(document).ready(function() {
 
 $(window).on('load', function() {
     console.log('load')
-    
+    // if(window.outerWidth < 767){
+        
+    //     var goFS = document.getElementById("goFS");
+    //     goFS.addEventListener("click", function() {
+    //         document.body.requestFullscreen();
+    //     }, false); 
+        
+    //     setTimeout(function(){
+           
+    //     },150)
+        
+    // }
     window.app.load();
 });
 
